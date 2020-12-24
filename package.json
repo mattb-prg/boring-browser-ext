@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development webpack --config webpack.dev.config.js --watch",
-    "build": "node ./scripts/pre-build.js && NODE_ENV=production webpack --config webpack.prod.config.js && node ./scripts/post-build.js",
+    "dev": "cross-env NODE_ENV=development webpack --config webpack.dev.config.js --watch",
+    "build": "node ./scripts/pre-build.js && cross-env NODE_ENV=production webpack --config webpack.prod.config.js && node ./scripts/post-build.js",
     "test": "ts-jest"
   },
   "author": "",
@@ -25,6 +25,7 @@
     "chrome-ext-mst-sync": "0.0.19",
     "classnames": "^2.2.6",
     "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^7.0.3",
     "css-loader": "^4.3.0",
     "eslint": "^7.8.0",
     "fs-extra": "^8.1.0",
