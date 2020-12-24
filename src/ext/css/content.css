@@ -1,0 +1,12 @@
+body {
+    filter: grayscale(1) !important;
+}
+
+img {
+    filter: blur(10px) !important;
+}
+
+img:hover, .show-img {
+    filter: blur(0px) !important;
+}
+
